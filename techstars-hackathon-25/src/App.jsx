@@ -1,5 +1,5 @@
 import React from 'react';
-import { Auth } from './Components/Auth'; // Corrected import path
+import Auth from './Components/Auth'; // Corrected import to default export
 
 function App() {
   const handleAuthSuccess = (userData) => {
@@ -9,7 +9,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen"> {/* You might have a layout for your target app */}
+    <div className="min-h-screen"> 
       <Auth onAuthSuccess={handleAuthSuccess} />
     </div>
   );
