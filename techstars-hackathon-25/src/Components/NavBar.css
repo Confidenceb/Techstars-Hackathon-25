@@ -1,0 +1,185 @@
+.header {
+  background-color: #e7ecec;
+  padding: 20px 60px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-logo {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+  font-family: "Nunito", sans-serif;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #1a1a1a;
+  position: relative;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22.28px;
+  transition: all 0.3s ease;
+}
+
+.nav-link a span {
+  margin-left: 8px;
+}
+
+.nav-link a:hover::after,
+.nav-link a:focus::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #10413f;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.nav-link a:hover,
+.nav-link a:active {
+  color: #10413f;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 10px 10px 10px 40px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-family: "Nunito", sans-serif;
+  background: #e7ecef;
+}
+
+.search-container input::placeholder {
+  color: #aaa;
+}
+
+.search-container input:focus {
+  outline: none;
+}
+
+.search-container .search-icon {
+  position: absolute;
+  left: 10px;
+  color: #aaa;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icons a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.icons a:hover,
+.icons a:focus {
+  color: #10413f;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: row;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .search-container {
+    flex-grow: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .mobile-menu-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    background: #e7ecec;
+    padding: 20px;
+    z-index: 1000;
+    overflow-y: auto;
+    display: block;
+  }
+
+  .mobile-menu nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobile-menu nav ul li {
+    margin-bottom: 20px;
+  }
+
+  .mobile-menu nav ul li a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+  }
+}
