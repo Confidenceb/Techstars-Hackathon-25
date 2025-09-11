@@ -1,0 +1,82 @@
+.footer {
+  background-color: #e7ecec;
+  padding: 40px 20px 20px;
+  font-family: "Nunito", sans-serif;
+  color: #1a1a1a;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer-desc {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.footer-col h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #10413f;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #10413f;
+}
+
+.footer-socials {
+  margin-top: 10px;
+}
+
+.footer-socials a {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #10413f;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  color: #555;
+}

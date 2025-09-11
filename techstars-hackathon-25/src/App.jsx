@@ -1,6 +1,7 @@
 // src/App.jsx
 import "./App.css";
 import Navbar from "./Components/NavBar.jsx";
+import Footer from "./Components/Footer.jsx";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <h1>Techstars Hackathon Project 🚀</h1>
       </main>
       <footer className="footer">
-        <p>© 2025 Team ChemHack | Techstars UNILAG</p>
+        <Footer />
       </footer>
     </div>
   );
