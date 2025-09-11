@@ -28,9 +28,6 @@ function Header() {
             <li className="nav-link">
               <a href="#">Unisex</a>
             </li>
-            <li className="nav-link">
-              <a href="#">Kids</a>
-            </li>
           </ul>
           <div className="search-container">
             <input type="text" placeholder="Search" />
@@ -182,22 +179,17 @@ function Header() {
             className="mobile-menu-backdrop"
             onClick={toggleMobileMenu}
           ></div>
-          <div className="mobile-menu">
+          <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
             <nav>
               <ul>
                 <li>
                   <a href="#">Men</a>
                 </li>
                 <li>
-                  <a href="#" className="active">
-                    Women
-                  </a>
+                  <a href="#">Women</a>
                 </li>
                 <li>
                   <a href="#">Unisex</a>
-                </li>
-                <li>
-                  <a href="#">Kids</a>
                 </li>
                 <li>
                   <Link to="/favorites" onClick={toggleMobileMenu}>
