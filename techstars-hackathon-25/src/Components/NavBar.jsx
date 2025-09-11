@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
-function Header() {
+function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -220,4 +220,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;
