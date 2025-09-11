@@ -1,0 +1,141 @@
+.sidebar {
+  width: 220px;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  font-family: "Nunito", sans-serif;
+
+  text-align: left;
+}
+
+.sidebar-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.sidebar-section {
+  margin-bottom: 25px;
+}
+
+.sidebar-section h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.sidebar-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-section ul li {
+  margin: 8px 0;
+}
+
+.sidebar-section ul li a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+
+.sidebar-section label {
+  display: block;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.color-options {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.color-circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.color-circle.red {
+  background: red;
+}
+.color-circle.yellow {
+  background: yellow;
+}
+.color-circle.green {
+  background: green;
+}
+.color-circle.blue {
+  background: blue;
+}
+.color-circle.purple {
+  background: purple;
+}
+.color-circle.black {
+  background: black;
+}
+.color-circle.pink {
+  background: pink;
+}
+.color-circle.orange {
+  background: orange;
+}
+.color-circle.cyan {
+  background: cyan;
+}
+.color-circle.teal {
+  background: teal;
+}
+.color-circle.brown {
+  background: brown;
+}
+.color-circle.grey {
+  background: grey;
+}
+
+.hamburger {
+  display: none;
+  font-size: 20px;
+  background: #10413f;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Tablet and below */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 180px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* hide it off-screen */
+    width: 220px;
+    height: 100%;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+
+  .sidebar.open {
+    left: 0; /* show when toggled */
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
