@@ -1,20 +1,16 @@
-// src/App.jsx
-import "./App.css";
-import Navbar from "./Components/NavBar.jsx";
-import Footer from "./Components/Footer.jsx";
+import React from 'react';
+import { Auth } from './Components/Auth'; // Corrected import path
 
 function App() {
+  const handleAuthSuccess = (userData) => {
+    console.log("Authentication successful!", userData);
+    // Implement your project's logic for successful login here
+    // e.g., store user token, update application state, redirect to a dashboard
+  };
+
   return (
-    <div className="app">
-      <header className="app-header">
-        <Navbar />
-      </header>
-      <main>
-        <h1>Techstars Hackathon Project 🚀</h1>
-      </main>
-      <footer className="footer">
-        <Footer />
-      </footer>
+    <div className="min-h-screen"> {/* You might have a layout for your target app */}
+      <Auth onAuthSuccess={handleAuthSuccess} />
     </div>
   );
 }
