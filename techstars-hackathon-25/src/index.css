@@ -1,4 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
 :root {
+  /* Color Palette */
+  --primary-color: #4CAF50; /* A vibrant green, symbolizing growth and reliability */
+  --primary-dark: #388E3C; /* Darker shade for hover states */
+  --secondary-color: #2196F3; /* A friendly blue for secondary actions/accents */
+  --accent-color: #FFC107; /* A warm yellow for highlights or warnings */
+
+  /* Text Colors */
+  --text-heading: #212121; /* Very dark gray for main titles */
+  --text-body: #424242; /* Dark gray for general text */
+  --text-label: #616161; /* Medium gray for form labels */
+  --text-placeholder: #9E9E9E; /* Light gray for input placeholders */
+  --text-input: #212121; /* Input text color */
+
+  /* Background Colors */
+  --bg-light: #F5F5F5; /* Light background for general sections */
+  --bg-dark: #E0E0E0; /* Slightly darker background */
+  --bg-input: #FFFFFF; /* White background for inputs */
+  --bg-hover: #F0F0F0; /* Light hover background */
+  --bg-disabled: #BDBDBD; /* Gray for disabled elements */
+  --bg-info: #E8F5E9; /* Light green for info messages */
+
+  /* Border Colors */
+  --border-light: #EEEEEE; /* Very light border */
+  --border-medium: #CCCCCC; /* Medium border for inputs */
+  --border-dark: #9E9E9E; /* Darker border */
+
+  /* Status Colors */
+  --success-color: #4CAF50; /* Green for success */
+  --danger-color: #F44336; /* Red for errors/danger */
+  --warning-color: #FF9800; /* Orange for warnings */
+  --info-color: #2196F3; /* Blue for informational messages */
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-focus: 0 0 0 3px rgba(76, 175, 80, 0.3); /* Primary color with transparency */
+  --shadow-focus-lg: 0 0 0 4px rgba(76, 175, 80, 0.4);
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;

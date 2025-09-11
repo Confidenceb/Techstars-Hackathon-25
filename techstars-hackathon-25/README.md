@@ -1,12 +1,81 @@
-# React + Vite
+# UNILAG Marketplace - Authentication Module
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive authentication system built with React and Vite. This project includes login, registration, and password reset functionality with form validation and password strength indicators.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔐 Secure authentication flow
+- ✨ Modern, responsive UI with smooth animations
+- 📱 Mobile-friendly design
+- 🔄 Form validation with helpful error messages
+- 🔒 Password strength indicator
+- 🌙 Dark mode support
+- ⚡ Fast development with Vite
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ React 18
+- 🚀 Vite 4
+- 🎨 Tailwind CSS
+- ✨ Lucide Icons
+- 🔍 ESLint + Prettier
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 16+ and npm/yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/techstars-hackathon-25.git
+   cd techstars-hackathon-25/techstars-hackathon-25
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Project Structure
+
+```
+src/
+  ├── Components/
+  │   ├── Auth.jsx       # Authentication component
+  │   └── Auth.css       # Authentication styles
+  ├── App.jsx            # Main application component
+  └── main.jsx           # Application entry point
+```
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License.
