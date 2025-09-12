@@ -12,9 +12,12 @@ function Navbar() {
   return (
     <header className="header">
       <div className="header-container">
+        {/* Logo */}
         <Link className="link" to="/">
           <div className="main-logo">ChemHack</div>
         </Link>
+
+        {/* Desktop Nav */}
         <nav className="nav">
           <ul className="nav-links">
             <li className="nav-link">
@@ -29,6 +32,8 @@ function Navbar() {
               <a href="#">Unisex</a>
             </li>
           </ul>
+
+          {/* Search */}
           <div className="search-container">
             <input type="text" placeholder="Search" />
             <svg
@@ -56,17 +61,41 @@ function Navbar() {
             </svg>
           </div>
         </nav>
+
+        {/* Icons Section */}
         <div className="icons">
-          <Link to="/checkout">
+          {/* Cart */}
+          <Link to="/cart">
             <svg
               width="24"
-              height="25"
-              viewBox="0 0 24 25"
+              height="24"
+              viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M12.62 21.31C12.28 21.43 11.72 21.43 11.38 21.31C8.48 20.32 2 16.19 2 9.18998C2 6.09998 4.49 3.59998 7.56 3.59998C9.38 3.59998 10.99 4.47998 12 5.83998C13.01 4.47998 14.63 3.59998 16.44 3.59998C19.51 3.59998 22 6.09998 22 9.18998C22 16.19 15.52 20.32 12.62 21.31Z"
+                d="M6 6H20L18 14H8L6 6Z"
+                stroke="#1A1A1A"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <circle cx="9" cy="20" r="1" fill="#1A1A1A" />
+              <circle cx="17" cy="20" r="1" fill="#1A1A1A" />
+            </svg>
+          </Link>
+
+          {/* Wishlist */}
+          <Link to="/wishlist">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 21C12 21 5 14.5 5 9.5C5 6.5 7.5 4 10.5 4C12.24 4 13.91 5 14.5 6.5C15.09 5 16.76 4 18.5 4C21.5 4 24 6.5 24 9.5C24 14.5 17 21 17 21H12Z"
                 stroke="#1A1A1A"
                 strokeWidth="1.5"
                 strokeLinecap="round"
@@ -74,7 +103,9 @@ function Navbar() {
               />
             </svg>
           </Link>
-          <Link to="/profile">
+
+          {/* Profile/Auth */}
+          <Link to="/auth">
             <svg
               width="24"
               height="25"
@@ -98,49 +129,9 @@ function Navbar() {
               />
             </svg>
           </Link>
-          <Link to="/cart">
-            <svg
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M2 2.5H3.74001C4.82001 2.5 5.67 3.43 5.58 4.5L4.75 14.46C4.61 16.09 5.89999 17.49 7.53999 17.49H18.19C19.63 17.49 20.89 16.31 21 14.88L21.54 7.38C21.66 5.72 20.4 4.37 18.73 4.37H5.82001"
-                stroke="#1A1A1A"
-                strokeWidth="1.5"
-                strokeMiterlimit="10"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M16.25 22.5C16.9404 22.5 17.5 21.9404 17.5 21.25C17.5 20.5596 16.9404 20 16.25 20C15.5596 20 15 20.5596 15 21.25C15 21.9404 15.5596 22.5 16.25 22.5Z"
-                stroke="#1A1A1A"
-                strokeWidth="1.5"
-                strokeMiterlimit="10"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M8.25 22.5C8.94036 22.5 9.5 21.9404 9.5 21.25C9.5 20.5596 8.94036 20 8.25 20C7.55964 20 7 20.5596 7 21.25C7 21.9404 7.55964 22.5 8.25 22.5Z"
-                stroke="#1A1A1A"
-                strokeWidth="1.5"
-                strokeMiterlimit="10"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M9 8.5H21"
-                stroke="#1A1A1A"
-                strokeWidth="1.5"
-                strokeMiterlimit="10"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </Link>
         </div>
+
+        {/* Mobile Menu Icon */}
         <div className="menu-icon" onClick={toggleMobileMenu}>
           <svg
             width="24"
@@ -173,6 +164,8 @@ function Navbar() {
           </svg>
         </div>
       </div>
+
+      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <>
           <div
@@ -192,23 +185,18 @@ function Navbar() {
                   <a href="#">Unisex</a>
                 </li>
                 <li>
-                  <Link to="/favorites" onClick={toggleMobileMenu}>
-                    Favorites
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/signin" onClick={toggleMobileMenu}>
-                    Sign In
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/signup" onClick={toggleMobileMenu}>
-                    Sign Up
-                  </Link>
-                </li>
-                <li>
                   <Link to="/cart" onClick={toggleMobileMenu}>
-                    My Cart
+                    Cart
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/wishlist" onClick={toggleMobileMenu}>
+                    Wishlist
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/auth" onClick={toggleMobileMenu}>
+                    Sign In
                   </Link>
                 </li>
               </ul>

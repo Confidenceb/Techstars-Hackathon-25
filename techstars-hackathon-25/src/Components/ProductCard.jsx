@@ -49,7 +49,7 @@ export default function ProductCard({ item, onContact, showWants }) {
         )}
 
         <div className="card-actions">
-          <button className="btn" onClick={onContact}>
+          <button className="btn contact-btn" onClick={onContact}>
             Contact Seller
           </button>
         </div>

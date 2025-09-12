@@ -121,6 +121,55 @@ function App() {
     },
   ];
 
+  const mockSwapProducts = [
+    {
+      id: 1,
+      title: "iPhone X",
+      description:
+        "64GB, still in good condition. Looking to swap for a newer Samsung.",
+      seller: "Tunde",
+      category: "Electronics",
+      wants: "Samsung Galaxy S20 or newer",
+      image: "https://via.placeholder.com/200",
+    },
+    {
+      id: 2,
+      title: "Acoustic Guitar",
+      description: "Well maintained guitar, comes with a bag.",
+      seller: "Chioma",
+      category: "Music",
+      wants: "Keyboard or Electric Guitar",
+      image: "https://via.placeholder.com/200",
+    },
+    {
+      id: 3,
+      title: "Office Chair",
+      description: "Ergonomic chair, barely used.",
+      seller: "Kunle",
+      category: "Furniture",
+      wants: "Standing Desk",
+      image: "https://via.placeholder.com/200",
+    },
+    {
+      id: 4,
+      title: "PlayStation 4",
+      description: "Comes with 2 controllers and 3 games.",
+      seller: "David",
+      category: "Gaming",
+      wants: "Xbox One or Gaming Laptop",
+      image: "https://via.placeholder.com/200",
+    },
+    {
+      id: 5,
+      title: "Mountain Bike",
+      description: "Good for off-road and long rides.",
+      seller: "Zainab",
+      category: "Sports",
+      wants: "Treadmill or Dumbbell Set",
+      image: "https://via.placeholder.com/200",
+    },
+  ];
+
   return (
     <div className="app">
       {/* Navbar */}
@@ -168,15 +217,23 @@ function App() {
               </>
             )}
             {activeTab === "Swap" && (
-              <div className="tab-pane">
-                <h2>Swap Products</h2>
-                <button className="list-btn">+ List Item for Swap</button>
+              <div className="products-grid">
+                <ProductFeed
+                  title="Swap"
+                  products={mockSwapProducts}
+                  showUploadButton={true}
+                  onUpload={() => alert("Open Buy Form")}
+                />
               </div>
             )}
             {activeTab === "Rent" && (
-              <div className="tab-pane">
-                <h2>Products for Rent</h2>
-                <button className="list-btn">+ List Your Item</button>
+              <div className="products-grid">
+                <ProductFeed
+                  title="Rent"
+                  products={mockSwapProducts}
+                  showUploadButton={true}
+                  onUpload={() => alert("Open Buy Form")}
+                />
               </div>
             )}
           </div>
