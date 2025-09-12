@@ -3,7 +3,9 @@ import Navbar from "./Components/NavBar.jsx";
 import Footer from "./Components/Footer.jsx";
 import Sidebar from "./Components/Sidebar.jsx";
 import ProductFeed from "./Components/ProductFeed.jsx";
+import Auth from "./Pages/Auth.jsx";
 import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   // Default active tab
@@ -170,13 +172,9 @@ function App() {
     },
   ];
 
-  return (
-    <div className="app">
-      {/* Navbar */}
-      <header className="app-header">
-        <Navbar />
-      </header>
-
+  // Home component for the main marketplace
+  const Home = () => (
+    <>
       {/* Main Section */}
       <main className="main-content">
         {/* Sidebar stays fixed */}
@@ -201,11 +199,6 @@ function App() {
           <div className="tab-content">
             {activeTab === "Buy" && (
               <>
-                {/* <div className="tab-pane">
-                  <h2>Buy Products</h2>
-                  <button className="list-btn">+ List Your Item</button>
-                </div> */}
-
                 <div className="products-grid">
                   <ProductFeed
                     title="Buy"
@@ -239,6 +232,23 @@ function App() {
           </div>
         </div>
       </main>
+    </>
+  );
+
+  return (
+    <div className="app">
+      {/* Navbar */}
+      <header className="app-header">
+        <Navbar />
+      </header>
+
+      {/* Routes */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/auth" element={<Auth />} />
+        <Route path="/cart" element={<div>Cart Page - Coming Soon</div>} />
+        <Route path="/wishlist" element={<div>Wishlist Page - Coming Soon</div>} />
+      </Routes>
 
       {/* Footer */}
       <footer className="footer">
