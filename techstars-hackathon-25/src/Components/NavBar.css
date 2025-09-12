@@ -103,7 +103,16 @@
 
 .icons a:hover {
   color: #10413f;
-  background-color: rgba(16, 65, 63, 0.1);
+}
+
+.icons a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #10413f;
 }
 
 .icons a svg {

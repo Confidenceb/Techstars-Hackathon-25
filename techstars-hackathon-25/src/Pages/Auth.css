@@ -71,7 +71,7 @@
   height: 64px;
   width: 64px;
   border-radius: 12px;
-  background-color: #3b82f6;
+  background-color: #10413f;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,7 +89,7 @@
 .auth-title {
   font-size: 28px;
   font-weight: bold;
-  color: #3b82f6;
+  color: #10413f;
   margin: 0 0 8px 0;
 }
 
@@ -146,8 +146,8 @@
 }
 
 .auth-tab.active {
-  color: #3b82f6;
-  border-bottom-color: #3b82f6;
+  color: #10413f;
+  border-bottom-color: #10413f;
 }
 
 .auth-tab:hover {
@@ -194,8 +194,8 @@
 .form-input:focus,
 .form-select:focus {
   outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: #10413f;
+  box-shadow: 0 0 0 3px rgba(16, 65, 63, 0.1);
 }
 
 .form-input.error,
@@ -249,7 +249,7 @@
   width: 16px;
   height: 16px;
   margin-top: 2px;
-  accent-color: #3b82f6;
+  accent-color: #10413f;
 }
 
 .checkbox-label {
@@ -304,7 +304,7 @@
 
 .forgot-link,
 .terms-link {
-  color: #3b82f6;
+  color: #10413f;
   text-decoration: none;
   font-size: 14px;
 }
@@ -318,7 +318,7 @@
 .submit-button {
   width: 100%;
   padding: 12px 24px;
-  background-color: #3b82f6;
+  background-color: #10413f;
   color: white;
   border: none;
   border-radius: 6px;
@@ -333,7 +333,7 @@
 }
 
 .submit-button:hover:not(:disabled) {
-  background-color: #2563eb;
+  background-color: #0d3530;
 }
 
 .submit-button:disabled {
@@ -378,7 +378,7 @@
 
 .verification-info {
   padding: 12px;
-  background-color: rgba(59, 130, 246, 0.05);
+  background-color: rgba(16, 65, 63, 0.05);
   border-radius: 6px;
   display: flex;
   align-items: flex-start;
@@ -388,7 +388,7 @@
 .shield-icon {
   width: 12px;
   height: 12px;
-  color: #3b82f6;
+  color: #10413f;
   margin-top: 2px;
   flex-shrink: 0;
 }
@@ -429,7 +429,7 @@
 .check-icon {
   width: 20px;
   height: 20px;
-  color: #3b82f6;
+  color: #10413f;
   margin-top: 2px;
   flex-shrink: 0;
 }

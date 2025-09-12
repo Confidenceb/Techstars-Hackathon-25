@@ -156,27 +156,7 @@ const Auth = () => {
       
       <div className="auth-content">
         <div className="auth-wrapper">
-          {/* Logo */}
-          <div className="auth-logo-section">
-            <div className="auth-logo">
-              <svg
-                className="graduation-cap-icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-                <path d="M6 12v5c3 3 9 3 12 0v-5" />
-              </svg>
-            </div>
-            <h1 className="auth-title">Unilag Marketplace</h1>
-            <p className="auth-subtitle">
-              {isLogin
-                ? "Sign in to access textbooks, supplies & more"
-                : "Create your student account to start shopping"}
-            </p>
-          </div>
+
 
           {/* Auth Card */}
           <div className="auth-card">
