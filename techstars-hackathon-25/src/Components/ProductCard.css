@@ -18,16 +18,16 @@
 }
 
 .image-placeholder {
-  width: 80px;
-  height: 80px;
+  /* width: 80px;
+  height: 80px; */
   border-radius: 8px;
-  background: #e6eeed;
+  /* background: #e6eeed; */
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
   color: #10413f;
-  font-size: 22px;
+  font-size: 64px;
 }
 
 .card-body {
@@ -38,9 +38,18 @@
   flex: 1;
 }
 
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .card-title {
   margin: 0;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
 }
 
 .card-price {
@@ -52,7 +61,7 @@
 .card-desc {
   font-size: 13px;
   color: #444;
-  margin-top: 6px;
+  margin: 6px 0;
   flex: 1;
 }
 

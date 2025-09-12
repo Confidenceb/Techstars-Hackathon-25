@@ -47,9 +47,16 @@ main {
   font-size: 14px;
   font-weight: 500;
   transition: background 0.3s ease, color 0.3s ease;
+
+  width: 100%;
 }
 
 .tab.active {
+  background: #10413f;
+  color: #fff;
+}
+
+.tab:hover {
   background: #10413f;
   color: #fff;
 }
@@ -65,4 +72,24 @@ section {
   margin-top: 20px;
   font-size: 14px;
   color: #555;
+}
+
+.btn {
+  display: inline-block;
+  background: #10413f;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background: #0d322f;
+}
+
+p {
+  margin: 0;
 }
