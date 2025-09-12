@@ -11,6 +11,8 @@ function App() {
   // Default active tab
   const [activeTab, setActiveTab] = useState("Buy");
 
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   const mockProducts = [
     {
       id: 1,
@@ -247,7 +249,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/auth" element={<Auth />} />
         <Route path="/cart" element={<div>Cart Page - Coming Soon</div>} />
-        <Route path="/wishlist" element={<div>Wishlist Page - Coming Soon</div>} />
+        <Route
+          path="/wishlist"
+          element={<div>Wishlist Page - Coming Soon</div>}
+        />
       </Routes>
 
       {/* Footer */}

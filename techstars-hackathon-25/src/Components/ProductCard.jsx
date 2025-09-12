@@ -50,7 +50,7 @@ export default function ProductCard({ item, onContact, showWants }) {
 
         <div className="card-actions">
           <button className="btn contact-btn" onClick={onContact}>
-            Contact Seller
+            Contact
           </button>
         </div>
       </div>

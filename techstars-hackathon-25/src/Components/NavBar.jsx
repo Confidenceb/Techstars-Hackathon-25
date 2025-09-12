@@ -14,7 +14,7 @@ function Navbar() {
       <div className="header-container">
         {/* Logo */}
         <Link className="link" to="/">
-          <div className="main-logo">ChemHack</div>
+          <div className="main-logo">StudyMART</div>
         </Link>
 
         {/* Desktop Nav */}

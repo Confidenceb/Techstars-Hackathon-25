@@ -33,12 +33,13 @@ main {
   gap: 10px;
   margin: 20px 0;
   justify-content: space-between;
-
   width: 100%;
 }
 
 .tab {
-  padding: 5px 120px;
+  flex: 1; /* make them auto-grow equally */
+  padding: 10px; /* balanced padding, no overflow */
+  text-align: center;
   border: 1px solid #10413f;
   border-radius: 8px;
   background: #f5f7f7;
@@ -47,8 +48,6 @@ main {
   font-size: 14px;
   font-weight: 500;
   transition: background 0.3s ease, color 0.3s ease;
-
-  width: 100%;
 }
 
 .tab.active {

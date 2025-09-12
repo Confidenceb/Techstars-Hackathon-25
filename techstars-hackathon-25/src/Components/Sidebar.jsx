@@ -1,14 +1,11 @@
-import React from "react";
-import { useState, useEffect, useRef } from "react";
-
+import React, { useState, useEffect, useRef } from "react";
 import "./SideBar.css";
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
-
   const sidebarRef = useRef(null);
 
-  // Close if click outside
+  // Close sidebar if clicked outside
   useEffect(() => {
     function handleClickOutside(event) {
       if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {

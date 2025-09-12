@@ -15,6 +15,7 @@
 /* tabs */
 .tabs {
   display: flex;
+  flex-wrap: wrap; /* allow wrap on medium screens */
   gap: 10px;
   margin-bottom: 18px;
 }
@@ -26,6 +27,7 @@
   border: 1px solid #e0e6e6;
   cursor: pointer;
   font-weight: 600;
+  transition: background 0.2s ease;
 }
 
 .tab.active {
@@ -38,7 +40,7 @@
 .grid {
   display: grid;
   gap: 16px;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
 }
 
 /* simple form */
@@ -64,6 +66,12 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: #0d322f;
 }
 
 .days-input {
@@ -72,7 +80,21 @@
   margin-left: 6px;
 }
 
-/* responsiveness: stack sidebar on small screens */
+/* ========== RESPONSIVENESS ========== */
+
+/* medium screens (<=1200px) → reduce gaps, allow wrap */
+@media (max-width: 1200px) {
+  .products-page {
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+/* stack sidebar below content on smaller devices (<=900px) */
 @media (max-width: 900px) {
   .products-page {
     flex-direction: column;
@@ -85,5 +107,22 @@
 
   .tabs {
     justify-content: space-between;
+  }
+}
+
+/* phones (<=480px) */
+@media (max-width: 480px) {
+  .tabs {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .tab {
+    width: 100%;
+    text-align: center;
+  }
+
+  .listing-form {
+    width: 100%;
   }
 }

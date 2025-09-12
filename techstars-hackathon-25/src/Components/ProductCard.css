@@ -18,10 +18,7 @@
 }
 
 .image-placeholder {
-  /* width: 80px;
-  height: 80px; */
   border-radius: 8px;
-  /* background: #e6eeed; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,6 +39,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* helps on small screens */
+  gap: 6px;
 }
 
 .card-title {
@@ -56,6 +55,7 @@
   margin: 0;
   font-weight: 700;
   color: #10413f;
+  font-size: 13px;
 }
 
 .card-desc {
@@ -77,5 +77,77 @@
 }
 
 .contact-btn {
-  padding: 5px 80px;
+  padding: 6px 16px;
+  border-radius: 6px;
+  background: #10413f;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #0d322f;
+}
+
+/* 🔹 Responsiveness */
+@media (max-width: 768px) {
+  .card-image {
+    height: 120px;
+  }
+
+  .image-placeholder {
+    font-size: 48px;
+  }
+
+  .card-title {
+    font-size: 13px;
+  }
+
+  .card-price {
+    font-size: 12px;
+  }
+
+  .card-desc {
+    font-size: 12px;
+  }
+
+  .card-meta {
+    font-size: 11px;
+  }
+
+  .contact-btn {
+    width: 100%;
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-image {
+    height: 100px;
+  }
+
+  .image-placeholder {
+    font-size: 40px;
+  }
+
+  .card-body {
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .card-title {
+    font-size: 12px;
+  }
+
+  .card-desc {
+    font-size: 11px;
+  }
+
+  .card-meta {
+    font-size: 10px;
+  }
 }
