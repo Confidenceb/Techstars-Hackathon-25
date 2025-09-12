@@ -1,8 +1,8 @@
 .app {
   font-family: Arial, sans-serif;
-  text-align: center;
 
   background-color: #f9f9f9;
+  color: #333;
 }
 
 .app-header {
@@ -13,6 +13,45 @@
 main {
   margin: 20px auto;
   max-width: 600px;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tab-section {
+  width: 100%;
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.tab {
+  padding: 5px 120px;
+  border: 1px solid #10413f;
+  border-radius: 8px;
+  background: #f5f7f7;
+  color: #10413f;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.tab.active {
+  background: #10413f;
+  color: #fff;
 }
 
 section {
