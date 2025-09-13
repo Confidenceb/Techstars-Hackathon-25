@@ -255,6 +255,8 @@
   height: 16px;
   margin-top: 2px;
   accent-color: #10413f;
+  background-color: white;
+  border: 1px solid #d1d5db;
 }
 
 .checkbox-label {
