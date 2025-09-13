@@ -24,7 +24,7 @@ function App() {
       location: "Unilag Campus",
       date: "2025-09-10",
       image:
-        "http://librarydb.unilag.edu.ng/newgenlibctxt/BookCoverServlet?ISBN=9781260085310&Id=30361&LibId=1",
+        "https://www.u-buy.com.ng/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNjFieGNpVGJzcEwuX1NMMTAwMF8uanBn.jpg",
     },
     {
       title: "Scientific Calculator (Casio fx-991ES)",
