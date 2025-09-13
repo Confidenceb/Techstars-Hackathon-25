@@ -92,3 +92,71 @@ section {
 p {
   margin: 0;
 }
+
+.hamburger {
+  display: none;
+  font-size: 13px;
+  background: #10413f;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+  border-radius: 6px;
+}
+
+/* ============= MEDIA QUERIES ============= */
+/* 🔹 Responsiveness */
+/* Tablet and below (collapse sidebar at 800px) */
+@media (max-width: 800px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* hidden off-screen */
+    width: 220px;
+    height: 100%;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    transition: left 0.3s ease;
+    z-index: 1200;
+
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    /* height: fit; */
+  }
+
+  .sidebar.open {
+    left: 0; /* visible when toggled */
+  }
+}
+
+/* Tablet and below */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 180px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tab {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 378px) {
+  .tab {
+    padding: 0;
+    border: none;
+    /* border-bottom: 1px solid #10413f; */
+    background: #f5f7f7;
+    color: #10413f;
+    font-size: 12px;
+    border-radius: 0;
+  }
+  .tab.active {
+    border-bottom: 2px solid #10413f;
+    background: #f5f7f7;
+    color: #10413f;
+  }
+}

@@ -98,17 +98,6 @@
   background: grey;
 }
 
-.hamburger {
-  display: none;
-  font-size: 20px;
-  background: #10413f;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
-  z-index: 1100;
-}
-
 /* Tablet and below (collapse sidebar at 800px) */
 @media (max-width: 800px) {
   .sidebar {
@@ -120,7 +109,7 @@
     background: #fff;
     border-right: 1px solid #ddd;
     transition: left 0.3s ease;
-    z-index: 1000;
+    z-index: 1200;
 
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     height: fit;
@@ -134,11 +123,11 @@
     display: block; /* show hamburger button */
     height: fit-content;
 
-    position: fixed;
-    top: 100px;
-    left: 15px;
+    /* position: absolute;
+    top: 200px;
+    left: 40px;
     border-radius: 6px;
-    z-index: 1100;
+    z-index: 1100; */
   }
 }
 

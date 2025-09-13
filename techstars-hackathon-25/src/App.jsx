@@ -180,7 +180,8 @@ function App() {
       {/* Main Section */}
       <main className="main-content">
         {/* Sidebar stays fixed */}
-        <Sidebar />
+        {/* <Sidebar /> */}
+        <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
 
         {/* Tabs and Content */}
         <div className="tab-section">
@@ -195,6 +196,13 @@ function App() {
                 {tab}
               </button>
             ))}
+            {/* Hamburger for Sortby mobile */}
+            <button
+              className="hamburger"
+              onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+            >
+              Sort By
+            </button>
           </div>
 
           {/* Tab Content */}
