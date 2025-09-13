@@ -179,25 +179,39 @@ function Navbar() {
             <nav>
               <ul>
                 <li>
-                  <a href="#">Men</a>
+                  <a href="#" onClick={toggleMobileMenu}>
+                    Men
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Women</a>
+                  <a href="#" onClick={toggleMobileMenu}>
+                    Women
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Unisex</a>
+                  <a href="#" onClick={toggleMobileMenu}>
+                    Unisex
+                  </a>
                 </li>
                 <li>
-                  <Link to="/Chemistry">Chemistry</Link>
+                  <Link to="/Chemistry" onClick={toggleMobileMenu}>
+                    Chemistry
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/cart">Cart</Link>
+                  <Link to="/cart" onClick={toggleMobileMenu}>
+                    Cart
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/wishlist">Wishlist</Link>
+                  <Link to="/wishlist" onClick={toggleMobileMenu}>
+                    Wishlist
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/auth">Sign In</Link>
+                  <Link to="/auth" onClick={toggleMobileMenu}>
+                    Sign In
+                  </Link>
                 </li>
               </ul>
             </nav>
