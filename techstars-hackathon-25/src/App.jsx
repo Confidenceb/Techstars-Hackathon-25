@@ -19,7 +19,8 @@ function App() {
       title: "Nike Air Max",
       price: 30000,
       priceUnit: "pair",
-      image: "https://via.placeholder.com/150",
+      image:
+        "https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/84fdcee0-c38c-443c-bfef-2c5148438bd9/NIKE+AIR+MAX+PLUS+UTILITY.png",
       description: "Stylish sneakers for casual wear.",
       seller: "John Doe",
       category: "Shoes",
@@ -31,7 +32,8 @@ function App() {
       id: 2,
       title: "HP Laptop 14”",
       price: 180000,
-      image: "https://via.placeholder.com/150",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyfwmak3G23fjz3dK9AxTtdHluvp8ZchZ7Sg&s",
       description: "Intel i5, 8GB RAM, 256GB SSD.",
       seller: "TechMart",
       category: "Electronics",
@@ -43,7 +45,7 @@ function App() {
       id: 3,
       title: "School Backpack",
       price: 12000,
-      image: "https://via.placeholder.com/150",
+      image: "https://m.media-amazon.com/images/I/61E-XnqCzVL._UY1000_.jpg",
       description: "Durable and water-resistant.",
       seller: "Sarah",
       category: "Bags",
@@ -55,7 +57,8 @@ function App() {
       id: 4,
       title: "Samsung Smart TV 43”",
       price: 145000,
-      image: "https://via.placeholder.com/150",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReLsVMxCveR5mvF-o99vL5X1Jtd4HCaf7yDw&s",
       description: "4K UHD with HDR and Smart features.",
       seller: "MegaStore",
       category: "Electronics",
@@ -67,7 +70,8 @@ function App() {
       id: 5,
       title: "Office Chair",
       price: 25000,
-      image: "https://via.placeholder.com/150",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2fT13CyGc0d1ZyIyvdWDXAhHzBL2IHLmxIg&s",
       description: "Comfortable swivel chair with cushion.",
       seller: "FurnitureHub",
       category: "Furniture",
@@ -79,7 +83,8 @@ function App() {
       id: 6,
       title: "Adidas Hoodie",
       price: 18000,
-      image: "https://via.placeholder.com/150",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWDMv7GTHcpxrt31yOfqeyVzS83giEvcanIQ&s",
       description: "Warm hoodie for casual outings.",
       seller: "Tunde",
       category: "Clothing",
@@ -91,7 +96,8 @@ function App() {
       id: 7,
       title: "Apple AirPods Pro",
       price: 90000,
-      image: "https://via.placeholder.com/150",
+      image:
+        "https://www.istore.com.ng/cdn/shop/files/airpods_pro_2nd_gen_with_usb-c_pdp_image_position-3__en-us_1200x.png?v=1697307583",
       description: "Noise-cancelling wireless earbuds.",
       seller: "SoundHub",
       category: "Electronics",
@@ -103,7 +109,8 @@ function App() {
       id: 8,
       title: "Cooking Blender",
       price: 20000,
-      image: "https://via.placeholder.com/150",
+      image:
+        "https://www.baumannliving.com/cdn/shop/products/CookingBlender1.jpg?v=1606905126",
       description: "Strong blender for smoothies and soups.",
       seller: "KitchenPro",
       category: "Appliances",
@@ -115,7 +122,8 @@ function App() {
       id: 9,
       title: "Luxury Wristwatch",
       price: 60000,
-      image: "https://via.placeholder.com/150",
+      image:
+        "https://pictures-nigeria.jijistatic.net/146469333_NjIwLTYyMC0yOTY5Nzk5Y2Vk.webp",
       description: "Elegant wristwatch for formal occasions.",
       seller: "Daniel",
       category: "Accessories",
@@ -134,7 +142,8 @@ function App() {
       seller: "Tunde",
       category: "Electronics",
       wants: "Samsung Galaxy S20 or newer",
-      image: "https://via.placeholder.com/200",
+      image:
+        "https://applestore.ng/wp-content/uploads/2022/10/iPhone_x_applestore.ng_.png",
     },
     {
       id: 2,
@@ -143,7 +152,8 @@ function App() {
       seller: "Chioma",
       category: "Music",
       wants: "Keyboard or Electric Guitar",
-      image: "https://via.placeholder.com/200",
+      image:
+        "https://www.learntoplaymusic.com/blog/wp-content/uploads/2014/10/electric_acoustic_crop.jpg",
     },
     {
       id: 3,
@@ -152,7 +162,8 @@ function App() {
       seller: "Kunle",
       category: "Furniture",
       wants: "Standing Desk",
-      image: "https://via.placeholder.com/200",
+      image:
+        "https://vavafurniture.com/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-19-at-10.16.00-AM.jpg",
     },
     {
       id: 4,
@@ -161,7 +172,8 @@ function App() {
       seller: "David",
       category: "Gaming",
       wants: "Xbox One or Gaming Laptop",
-      image: "https://via.placeholder.com/200",
+      image:
+        "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/63/0604822/1.jpg?7212",
     },
     {
       id: 5,
@@ -170,7 +182,8 @@ function App() {
       seller: "Zainab",
       category: "Sports",
       wants: "Treadmill or Dumbbell Set",
-      image: "https://via.placeholder.com/200",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC3uYnPo_CBOYSqSiK6a66fnjBWejDiaFL-A&s",
     },
   ];
 
@@ -180,7 +193,6 @@ function App() {
       {/* Main Section */}
       <main className="main-content">
         {/* Sidebar stays fixed */}
-        {/* <Sidebar /> */}
         <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
 
         {/* Tabs and Content */}
