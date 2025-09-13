@@ -34,10 +34,10 @@ function Sidebar({ isOpen, setIsOpen }) {
             <a href="#">Dresses</a>
           </li>
           <li>
-            <a href="#">Trousers</a>
+            <a href="#">Lab Materials</a>
           </li>
           <li>
-            <a href="#">Beach Wear</a>
+            <a href="#">Text Books</a>
           </li>
           <li>
             <a href="#">Bags</a>
