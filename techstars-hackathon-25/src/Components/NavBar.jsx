@@ -188,6 +188,9 @@ function Navbar() {
                   <a href="#">Unisex</a>
                 </li>
                 <li>
+                  <Link to="/Chemistry">Chemistry</Link>
+                </li>
+                <li>
                   <Link to="/cart">Cart</Link>
                 </li>
                 <li>
