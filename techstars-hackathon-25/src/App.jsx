@@ -4,6 +4,7 @@ import Footer from "./Components/Footer.jsx";
 import Sidebar from "./Components/Sidebar.jsx";
 import ProductFeed from "./Components/ProductFeed.jsx";
 import Auth from "./Pages/Auth.jsx";
+import Chemistry from "./Pages/Chemistry";
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
@@ -273,6 +274,7 @@ function App() {
           path="/wishlist"
           element={<div>Wishlist Page - Coming Soon</div>}
         />
+        <Route path="/Chemistry" element={<Chemistry />} />
       </Routes>
 
       {/* Footer */}

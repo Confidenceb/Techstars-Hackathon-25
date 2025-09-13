@@ -31,6 +31,9 @@ function Navbar() {
             <li className="nav-link">
               <a href="#">Unisex</a>
             </li>
+            <li className="nav-link">
+              <Link to="/Chemistry">Chemistry</Link>
+            </li>
           </ul>
 
           {/* Search */}
@@ -185,19 +188,13 @@ function Navbar() {
                   <a href="#">Unisex</a>
                 </li>
                 <li>
-                  <Link to="/cart" onClick={toggleMobileMenu}>
-                    Cart
-                  </Link>
+                  <Link to="/cart">Cart</Link>
                 </li>
                 <li>
-                  <Link to="/wishlist" onClick={toggleMobileMenu}>
-                    Wishlist
-                  </Link>
+                  <Link to="/wishlist">Wishlist</Link>
                 </li>
                 <li>
-                  <Link to="/auth" onClick={toggleMobileMenu}>
-                    Sign In
-                  </Link>
+                  <Link to="/auth">Sign In</Link>
                 </li>
               </ul>
             </nav>

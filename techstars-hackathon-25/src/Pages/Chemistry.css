@@ -1,0 +1,79 @@
+.chemistry-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.chemistry-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #1d3557;
+  margin-bottom: 0.5rem;
+}
+
+.chemistry-intro {
+  text-align: center;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.chem-section {
+  margin-bottom: 1.5rem;
+}
+
+.chem-section h2 {
+  font-size: 1.2rem;
+  background: #f1f1f1;
+  padding: 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.chem-section h2:hover {
+  background: #e0e0e0;
+}
+
+.chem-section ul {
+  margin-top: 0.7rem;
+  padding-left: 1.2rem;
+  color: #333;
+}
+
+.chem-section li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.chem-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #1d3557;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.chem-btn:hover {
+  background: #457b9d;
+}
+
+.drive-link {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.chem-link {
+  color: #1d3557;
+  font-weight: bold;
+  text-decoration: underline;
+}
