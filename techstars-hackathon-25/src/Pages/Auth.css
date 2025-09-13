@@ -187,6 +187,7 @@
   font-size: 14px;
   transition: border-color 0.2s, box-shadow 0.2s;
   background-color: white;
+  color: #10413f;
   width: 100%;
   box-sizing: border-box;
 }
@@ -201,6 +202,10 @@
 .form-input.error,
 .form-select.error {
   border-color: #ef4444;
+}
+
+.form-input::placeholder {
+  color: #9ca3af;
 }
 
 .form-input:disabled,
